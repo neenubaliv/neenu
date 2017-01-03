@@ -39,7 +39,17 @@ app.controller('HomeController', function($scope) {
     }
     function widgetsController($scope, $route) {
     $scope.$route = $route;
+
+  
 }
+  $scope.pageScroll = function () {
+   var elem = document.getElementById('data');
+    // elem.scrollTop = elem.scrollHeight;
+    // document.getElementById('data').scrollBy(0,1);
+    elem.scrollTop =100;
+    console.log(elem.scrollTop);
+  }
+  
 });
 
 app.controller('MembersController', function($scope) {
